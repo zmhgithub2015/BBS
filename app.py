@@ -10,6 +10,7 @@ from apps.front import front_bp
 
 
 def create_app():
+    """app工厂函数"""
     app = Flask(__name__)
     app.config.from_object(config)
 

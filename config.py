@@ -1,0 +1,15 @@
+#encoding: utf-8
+
+DEBUG = True
+
+# 数据库配置
+DB_USERNAME = 'root'
+DB_PASSWORD = 'root'
+DB_HOST = '127.0.0.1'
+DB_PORT = '3306'
+DB_NAME = 'ZLBBS'
+
+DB_URL = f'mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}?charset=utf8'
+
+SQLALCHEMY_DATABASE_URI = DB_URL
+SQLALCHEMY_TRACK_MODIFICATIONS = False
